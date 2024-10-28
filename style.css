@@ -1,0 +1,146 @@
+/* General Styles */
+body.cloud-background {
+    background-image: url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGNsb3VkfGVufDB8fHx8MTY5Nzc2MTc3OA&ixlib=rb-1.2.1&q=80&w=1080');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    height: 100vh;
+    overflow-x: hidden;
+    color: #333;
+}
+
+/* Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Heading */
+h2 {
+    color: #444;
+}
+
+/* Forecast Items */
+.forecast-item {
+    flex: 0 0 auto;
+    width: 150px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+}
+
+.forecast-clear {
+    background-color: #f9d71c; /* Sunny Yellow */
+    color: #333;
+}
+
+.forecast-rain {
+    background-color: #4a90e2; /* Rainy Blue */
+    color: white;
+}
+
+.forecast-clouds {
+    background-color: #95a5a6; /* Cloudy Gray */
+    color: white;
+}
+
+.forecast-snow {
+    background-color: #d0e6f7; /* Snowy Light Blue */
+    color: #333;
+}
+
+.forecast-default {
+    background-color: #f0f0f0; /* Default Gray */
+    color: #333;
+}
+
+/* AQI Levels */
+.aqi-good {
+    background-color: #55a84f; /* Green for Good */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.aqi-fair {
+    background-color: #a3c853; /* Light Green for Fair */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.aqi-moderate {
+    background-color: #ffe133; /* Yellow for Moderate */
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.aqi-poor {
+    background-color: #f29c33; /* Orange for Poor */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.aqi-very-poor {
+    background-color: #d9331f; /* Red for Very Poor */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Weather Card */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .forecast-item {
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Input and Button */
+#city {
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#city:focus {
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 0px 4px rgba(72, 149, 239, 0.5);
+    border-color: #3083dc;
+}
+
+#weatherResult h4, #aqiResult h4 {
+    font-weight: 600;
+    color: #555;
+}
